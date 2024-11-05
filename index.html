@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Market Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cryptocurrency Market Data</h1>
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Search by name...">
+        <button id="search-button" onclick="searchData()">Search</button>
+        <button id="sort-button" onclick="sortData('market_cap')">Sort by Market Cap</button>
+        <button  id="sort-button" onclick="sortData('percentage_change')">Sort by % Change</button>
+    </div>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Price (USD)</th>
+                <th>Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
